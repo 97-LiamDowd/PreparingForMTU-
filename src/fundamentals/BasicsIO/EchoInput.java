@@ -8,7 +8,7 @@ public class EchoInput{
         String name;
         int age;
         double height;
-        boolean student;
+        boolean confirm;
         Scanner scanner = new Scanner(System.in);
         
         
@@ -21,10 +21,10 @@ public class EchoInput{
         System.out.println("What height are you?");
         height = scanner.nextDouble();
         
-        System.out.println("Are you a student? (True/False)");
-        student = scanner.nextBoolean();
+        System.out.println("Your name is " + name + ". You're " + age + " years old. You're height is " + height);
 
-        
+        System.out.println("Is this information correct? (True/False)");
+        confirm = scanner.nextBoolean();
         
         
 
