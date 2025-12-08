@@ -23,7 +23,7 @@ public class SimpleCalculator{
         num1 = scanner.nextInt();
 
         //add = +, subtract = -, multiply = *, divide = / 
-        System.out.print("Choose between " + add + ", " + subtract + ", " + multiply + ", " + divide);
+        System.out.print("Choose between " + add + ", " + subtract + ", " + multiply + ", " + divide + "");
         operator = scanner.next();
 
         System.out.print("Choose another number = ");
