@@ -15,12 +15,15 @@ public class SimpleCalculator{
 
         //Last updated: create each operator as such - String name = "Symbol"
         String add = "+";
+        String subtract = "-";
+        String multiply = "*";
+        String divide = "/";
 
         System.out.print("Choose a number = ");
         num1 = scanner.nextInt();
 
         //add = +, subtract = -, multiply = *, divide = / 
-        System.out.print("Choose between " + add + " ");
+        System.out.print("Choose between " + add + ", " + subtract + ", " + multiply + ", " + divide);
         operator = scanner.next();
 
         System.out.print("Choose another number = ");
