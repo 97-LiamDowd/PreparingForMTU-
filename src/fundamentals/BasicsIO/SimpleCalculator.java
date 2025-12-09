@@ -33,32 +33,40 @@ public class SimpleCalculator{
         num2 = scanner.nextInt();
 
         //last update = use operator.equals(add/subtract/multiply/divide)
+        
+        //Stopping division by 0
+        if(operator.equals(divide) && num2 == 0){
+            System.out.print("invalid input");
 
         //outcome add
-        if(operator.equals(add)){
-            sum = num1 + num2;
+        }   else if(operator.equals(add)){
+                sum = num1 + num2;
+                System.out.print(sum);
 
         //outcome subtract
         }   else if(operator.equals(subtract)){
                 sum = num1 - num2;
+                System.out.print(sum);
 
         //outcome multiply
         }   else if(operator.equals(multiply)){
                 sum = num1 * num2;
+                System.out.print(sum);
 
         //outcome divide
         }   else if(operator.equals(divide)){
                 sum = num1 / num2;
-
+                System.out.print(sum);
+        
+        //Incase user puts in something other then prompted        
         }   else{
             System.out.print("Invalid input");
-            return;
-        }
-        
-        System.out.print(sum);
-        
-        scanner.close();
+           
 
+        }//end of if/if-else/else sequence
+
+         scanner.close();
+        
     }//end of main method
 
 }//end of class
