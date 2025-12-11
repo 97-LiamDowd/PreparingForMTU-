@@ -1,4 +1,4 @@
-package fundamentals.BasicsIO;
+package fundamentals;
 
 import java.util.Scanner;
 
